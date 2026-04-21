@@ -7,7 +7,7 @@ from bookFactory import BookFactory
 from bookAbstract import Book
 from config import POSTGRES_CONFIG
 
-class DBRepository(BookRepository):  # ⬅️ Имя класса
+class DBRepository(BookRepository): 
     def __init__(self):
         try:
             self.connection = psycopg2.connect(**POSTGRES_CONFIG)

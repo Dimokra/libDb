@@ -1,12 +1,11 @@
 from bookFactory import BookFactory
-from dbRepository import DBRepository  # ⬅️ Импортируем из файла dbRepository.py
+from dbRepository import DBRepository 
 
 
 if __name__ == '__main__':
     try:
         repository = DBRepository()
 
-    # Создаём книги
         book1 = BookFactory.create_book("fiction", "Дюна", "Фрэнк Герберт", 1200.0)
         book2 = BookFactory.create_book("science", "Космос", "Карл Саган", 950.0)
         book3 = BookFactory.create_book("art", "Искусство цвета", "Иоханнес Иттен", 1500.0)
